@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>frenchbloke — audio experiments</title>
+<meta name="description" content="A collection of browser-based audio experiments by frenchbloke.">
+<style>
+:root{
+  --bg:#0e0e10;--panel:#17171a;--ink:#e8e6e1;--mute:#8a8882;--acc:#ff5a1f;--line:#2a2a2e;--link:#7aa2ff;
+  --max:920px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--max);margin:0 auto;padding:48px 24px 80px}
+header{margin-bottom:40px;border-bottom:1px solid var(--line);padding-bottom:24px}
+h1{font-size:40px;letter-spacing:-.02em;margin:0 0 6px;font-weight:700}
+.tag{color:var(--mute);font-size:16px;margin:0}
+.note{color:var(--mute);font-size:13px;margin-top:16px;font-style:italic}
+.grid{display:grid;gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 22px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--acc);transform:translateY(-1px)}
+.card h2{margin:0 0 8px;font-size:20px;letter-spacing:-.01em}
+.card h2 a{color:var(--ink)}
+.card h2 a:hover{color:var(--acc);text-decoration:none}
+.url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--mute);margin-bottom:10px;display:block;word-break:break-all}
+.desc{color:var(--ink);font-size:14.5px;line-height:1.55;margin:0;white-space:pre-line}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--mute);font-size:12px}
+footer a{color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>frenchbloke</h1>
+  <p class="tag">Browser-based audio experiments. All single HTML files — right-click, save as, use anywhere.</p>
+</header>
+<main class="grid">
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/glue/">glue</a></h2>
+  <span class="url">https://frenchbloke.github.io/glue/</span>
+  <p class="desc">After weeks of disassembling audio files with some rate of precision, I thought what else can be done with it that isn't on any of the things below this one? Then I thought, what if you could load a MIDI file and use the sliced beats to play that MIDI file? And what better thing to test it than Blue Monday. (you can import other MIDI files) amusing for a few minutes.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/amstradt/amstradt.html">amstradt</a></h2>
+  <span class="url">https://frenchbloke.github.io/amstradt/amstradt.html</span>
+  <p class="desc">Imagine if Amstrad made the shittiest sounding sample / hold / looper. Imagine no more. It's hissy, it's meant to be.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/temute/">temute</a></h2>
+  <span class="url">https://frenchbloke.github.io/temute/</span>
+  <p class="desc">If Temu made audio software. This takes the idea of locking beat 1, 5, 9, 13 etc of something 4/4, then takes beat 2 and smears it across 2, 3 &amp; 4 etc. Ultimately pointless but it gave me a few ideas at least.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/DJMince/">DJMince</a></h2>
+  <span class="url">https://frenchbloke.github.io/DJMince/</span>
+  <p class="desc">This one is just stupid but proved a point. Import one track, import another. It will use track one (unless you hit shuffle) as the basis for what you hear — so beats 1, 5, 9, 13, the doof bit — and will use bits of both 1 &amp; 2 to fill up the gaps. Sounds like a car crash but fun when used with non-doof doof.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/disappointment/">disappointment</a></h2>
+  <span class="url">https://frenchbloke.github.io/disappointment/</span>
+  <p class="desc">Instant (well, once it calculated the time / format shifting to get the original bpm) schaffel and waltzes and 7/8 and chaos.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/aspire/">aspire</a></h2>
+  <span class="url">https://frenchbloke.github.io/aspire/</span>
+  <p class="desc">A synthesised choir that's triggered when satellites pass overhead — the data in this is from last week so will lose its reliability.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/precentor/">precentor</a></h2>
+  <span class="url">https://frenchbloke.github.io/precentor/</span>
+  <p class="desc">The first choir related thing I tried. You can play this one using the a–j keys.</p>
+</article>
+<article class="card">
+  <h2><a href="https://frenchbloke.github.io/orrery/Orrery.html">orrery</a></h2>
+  <span class="url">https://frenchbloke.github.io/orrery/Orrery.html</span>
+  <p class="desc">Took the choir idea then added the Eno / Koan Pro random generative pattern looping cycle thing. It spins, it sings.</p>
+</article>
+</main>
+<p class="note">These are all HTML files so you can right-click, save as, and use them wherever you want.</p>
+<footer>
+  <a href="https://github.com/frenchbloke">github.com/frenchbloke</a>
+</footer>
+</div>
+</body>
+</html>
